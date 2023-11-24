@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Markup and Form Design to layout pages of homework #6
+# goit-markup-hw-07
+Responsive Layout of all Elements of the Main Page of homework #7
