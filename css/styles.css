@@ -445,8 +445,11 @@ body {
     background-color: var(--WHITE);
     text-align: center;
     border: 1px hidden;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 30px 0;
+    padding: 0;
 }
 
 .team-text p {
@@ -538,6 +541,7 @@ body {
 
 .project-cards {
     display: flex;
+    justify-content: center;
 }
 
 .project-cards .devices {
@@ -623,7 +627,6 @@ body {
     padding-bottom: 100px;
     padding-left: 156px;
     display: flex;
-    justify-content: flex-start;
 }
 
 .footer {
@@ -699,4 +702,99 @@ body {
 .button-sub:visited {
     color: var(--SLATE);
     fill: var(--SLATE);
+}
+
+/* CSS MEDIA QUERY */
+
+@media (max-width: 1157px) {
+    .header {
+        justify-content: space-evenly;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .what,
+    .what-devices {
+        display: none;
+    }
+
+    .below,
+    .team,
+    .customers .menu {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team {
+        padding: 0 60px;
+    }
+
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .below-button {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .below-button .h3 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 111.111%;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+
+    .square-icons {
+        display: none;
+    }
+
+    .team-li {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .team-li img {
+        width: 100%;
+    }
+
+    .customer-li {
+        display: flex;
+        justify-content: center;
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    .customer-123 {
+        margin-bottom: 45px;
+    }
+
+    .container-footer {
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        padding-left: 108px;
+    }
+
+    .footer {
+        margin-bottom: 72px;
+    }
+
+    .socials {
+        margin-left: 24px;
+    }
+
+    .subscribe {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-footer {
+        justify-content: center;
+    }
 }
